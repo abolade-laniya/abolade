@@ -1,0 +1,69 @@
+
+
+# to create a budget class that can instantiate objects based on category
+# by Laniya Abolade
+
+class budget():
+     
+      
+
+# to accept deposit funds to each category
+      def deposit(self):
+          category=""
+          amount=float(input("How much would you like to allot to %s \n" % category))
+       
+
+# to withdraw funds from each category.   
+      def withdraw(self):
+          withdrawal=float(input("How much would you like to withdraw \n"))
+          if(withdrawal <= amount):
+              print("please release the money")
+          else:
+              print(" withdrawal above budget")
+              return withdrawal
+ 
+
+#   to calculate balance for each category
+      def calBalance(self,withdrawal, amount):
+          newBalance= amount -withdrawal
+          return newBalance
+
+# to transfer balance amount to each category
+      def transBalance(self,newBalance):
+          print("Your new Budget balance is %d \n" %newBalance)
+
+#food budget
+catFood= budget()
+catFood.category = "food"
+catFood.deposit()
+catFood.withdraw()
+catFood.calBalance
+catFood.transBalance()
+
+
+print ("\n")
+
+#cloth budget
+catCloth= budget()
+catCloth.category= "clothing"
+catCloth.deposit()
+catCloth.withdraw()
+catCloth.calBalance
+catCloth.transBalance()
+
+
+# entertainment budget
+catEntertainment= budget()
+catEntertainment.category= "entertainment"
+catEntertainment.deposit()
+catEntertainment.withdraw()
+catEntertainment.calBalance()
+catEntertainment.transBalance()
+
+
+
+
+  
+
+
+ 
